@@ -9,7 +9,7 @@ void addEdge(vector<vector<int>>&adj,int i , int j ,int wt){
 }
 
 bool valid(int i, int j, int N, bool visited[N][N]){
- if(i<0 || i>=N || j<0 || j>=N  &&  visited[i][j]){
+ if(i<0 || i>=N || j<0 || j>=N  ||  visited[i][j]){
      return 0; // if visited return 0 else 1
  }
  return 1;
